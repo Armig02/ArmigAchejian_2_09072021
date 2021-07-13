@@ -1,0 +1,263 @@
+@font-face {   font-family: Raleway-Regular;
+    src: url(Raleway-Regular.ttf)
+}
+
+body{
+    font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
+}
+
+/*-----------------------HEADER-----------------------*/
+
+/*-----nav----*/
+
+.nav-list{
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+
+header p, header nav {
+    display:inline-block;
+    vertical-align:middle;
+}
+
+a{
+    text-decoration: none;
+}
+.hébergements{
+    text-decoration: overline;
+    color: #0065FC;
+    font-size: 00.8em;
+}
+
+.activités{
+    color: grey;
+    font-size: 00.8em;
+}
+          
+.inscription{
+    color:#0065FC;
+    font-weight: bold;
+    font-size: 00.8em;
+}
+
+/*----texte d'accroche------*/
+h2{
+    font-weight: bold;
+    font-size: 1em;
+}
+.ligne-2{
+    font-size: 00.7em;
+    font-weight: normal;
+    color: grey;
+}
+
+/*---------barre de recherche-------*/
+
+#search location{
+    display: flex;
+    
+}
+.fa-map-marker-alt{
+   background-color: red;
+   font-size: 000.8em;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px 0px 0px 5px;
+   border:1px red solid;
+}
+
+#location{
+    border: 1px #f2f2f2 solid;
+    font-size: 000.8em;
+}
+
+#search{
+    color:white;
+    background-color: #0065FC;
+    border:1px #0065FC solid;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 000.8em;
+}
+
+/*----------filtres---------*/
+
+header h3{
+    display: flex;
+    display:inline-flex;
+    justify-content:space-between;
+}
+
+
+.filtres:hover{
+    Color:white;
+    font-weight: bold;
+    background-color:silver;
+}
+
+.filtres{
+    background-color: white;
+    border: none;
+    text-align:right;
+    text-align: right;
+}
+
+#économique{
+    border:1px #f2f2f2 solid;
+    border-radius: 20px;
+}
+
+.fa-money-bill-wave{
+    color:#0065FC;
+    border:1px #deebff solid;
+    border-radius: 25px;
+    background-color:#DEEBFF;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+#familial{
+    border:1px #f2f2f2 solid;
+    border-radius: 20px;
+}
+
+.fa-child{
+    color:#0065FC;
+    border:1px #deebff solid;
+    border-radius: 25px;
+    background-color:#DEEBFF;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+#romantique{
+    border:1px #f2f2f2 solid;
+    border-radius: 20px;
+}
+
+.fa-heart{
+    color:#0065FC;
+    border:1px #deebff solid;
+    border-radius: 25px;
+    background-color:#DEEBFF;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+#animaux{
+    border:1px #f2f2f2 solid;
+    border-radius: 20px;
+}
+
+.fa-dog{
+    color:#0065FC;
+    border:1px #deebff solid;
+    border-radius: 25px;
+    background-color:#DEEBFF;
+    width: 25px;
+    height: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6em;
+}
+
+<!-----------Information------------->
+
+.fa-info-circle{
+    color: white;
+}
+
+.information{
+    font-size: 000.8em;
+    font-weight: normal;
+    color:grey;
+}
+
+/*------------------- SECTION HEBERGEMENT A MARSEILLE--------------------*/
+
+.section-hébergement{
+    background-color: #f2f2f2;
+}
+
+.nom-hotel{
+    font-size: 000.8em;
+    font-weight: bold;
+}
+
+.tarif-nuit{
+    font-size: 0.7em;
+}
+
+span{
+    font-weight: bold;
+}
+
+.blue-star{
+    font-size: 0.6em;
+    color: #0065FC;
+}
+
+.grey-star{
+    font-size: 00.6em;
+    color: #f2f2f2;
+}
+
+.aperçu-hébergement{
+    border: 1px red solid;
+    border-radius: 15px 5px 5px 15px;
+    box-shadow: ombre 
+    width: largeur du bloc 
+    height: hauteur du bloc 
+    padding: marge intérieur 
+    margin: marge extérieur
+
+
+}
+
+
+
+<!----------------------------FOOTER ------------------------>
+
+@font-face {   font-family: Raleway-Regular;
+    src: url(Raleway-Regular.ttf)
+}
+
+
+footer{ 
+    font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
+    font-size: 0.7em;
+    display:flex;
+    background-color: #f2f2f2;
+}
+
+h4{
+    display: flex;
+    font-weight: bolder;
+}
+
+li{
+    list-style-type:none;
+}
+
+ul{
+    width: 33.33%;
+}
+
+
+
+      
