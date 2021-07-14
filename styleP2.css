@@ -2,44 +2,63 @@
     src: url(Raleway-Regular.ttf)
 }
 
-body{
+*{
     font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
 }
+
 
 /*-----------------------HEADER-----------------------*/
 
 /*-----nav----*/
 
-.nav-list{
+.logo-nav{
     display: flex;
-    text-align: right;
-    justify-content: flex-end;
     justify-content: space-between;
+    margin: 52px;
+    margin-top: 38px;
+    align-items: center;
 }
 
-header p, header nav {
-    display:inline-block;
-    vertical-align:middle;
+nav ul{
+    display: flex;
+    margin: 0px;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 0000.8em;
+    text-align: center;
+    margin-top: 30px;
+    margin-right: 225px;
 }
 
-a{
-    text-decoration: none;
+nav li{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    text-align: center;
 }
+
 .hébergements{
-    text-decoration: overline;
     color: #0065FC;
-    font-size: 00.8em;
+    border: 1px solid white;
+    padding-top: 50px;
+    border-top-color: #0065FC;
+    border-top-width: 3px;
 }
 
 .activités{
-    color: grey;
-    font-size: 00.8em;
+    text-decoration: none;
+    color: black;
 }
-          
+
+nav ul a{
+    text-decoration: none;
+    
+}
+
 .inscription{
-    color:#0065FC;
+    color: #0065FC;
     font-weight: bold;
-    font-size: 00.8em;
 }
 
 /*----texte d'accroche------*/
