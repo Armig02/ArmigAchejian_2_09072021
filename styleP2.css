@@ -14,7 +14,7 @@
 .logo-nav{
     display: flex;
     justify-content: space-between;
-    margin: 52px;
+    margin-left:  52px;
     margin-top: 38px;
     align-items: center;
 }
@@ -65,6 +65,7 @@ nav ul a{
 h2{
     font-weight: bold;
     font-size: 1em;
+    margin-left: 52px;
 }
 .ligne-2{
     font-size: 00.7em;
@@ -74,31 +75,39 @@ h2{
 
 /*---------barre de recherche-------*/
 
-#search location{
+form{
+    margin-left: 51px;
     display: flex;
-    
 }
+
 .fa-map-marker-alt{
-   background-color: red;
+   background-color:#f2f2f2
    font-size: 000.8em;
    display: flex;
    justify-content: center;
    align-items: center;
    border-radius: 5px 0px 0px 5px;
-   border:1px red solid;
+   border:1px #f2f2f2;
+   padding: 7px 10px 7px 10px;
+   text-align: center;
 }
 
-#location{
+#ville{
     border: 1px #f2f2f2 solid;
     font-size: 000.8em;
+    color: black;
+    border-right: #0065FC;
 }
 
-#search{
+#Rechercher{
     color:white;
     background-color: #0065FC;
     border:1px #0065FC solid;
     border-radius: 0px 5px 5px 0px;
     font-size: 000.8em;
+    padding: 7px 10px 7px 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /*----------filtres---------*/
