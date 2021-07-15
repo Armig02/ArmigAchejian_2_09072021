@@ -76,7 +76,7 @@ h2{
 /*---------barre de recherche-------*/
 
 form{
-    margin-left: 51px;
+    margin-left: 52px;
     display: flex;
 }
 
@@ -108,100 +108,51 @@ form{
     padding: 7px 10px 7px 10px;
     text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*----------filtres---------*/
 
-header h3{
-    display: flex;
-    display:inline-flex;
-    justify-content:space-between;
+#filter{
+    display:flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-left: 52px;
 }
 
-
-.filtres:hover{
-    Color:white;
-    font-weight: bold;
-    background-color:silver;
+filter span{
+    font-size: 0.9em;
 }
 
 .filtres{
-    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 2px solid #f2f2f2;
+    border-radius: 30px;
+    margin-left: 33px;
+    cursor: pointer;
+}
+
+#filter div i{
+    color: #0065FC;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background:#deebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -3px;
+
+}
+
+#filter div input{
     border: none;
-    text-align:right;
-    text-align: right;
-}
-
-#économique{
-    border:1px #f2f2f2 solid;
-    border-radius: 20px;
-}
-
-.fa-money-bill-wave{
-    color:#0065FC;
-    border:1px #deebff solid;
-    border-radius: 25px;
-    background-color:#DEEBFF;
-    width: 25px;
-    height: 25px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.6em;
-}
-
-#familial{
-    border:1px #f2f2f2 solid;
-    border-radius: 20px;
-}
-
-.fa-child{
-    color:#0065FC;
-    border:1px #deebff solid;
-    border-radius: 25px;
-    background-color:#DEEBFF;
-    width: 25px;
-    height: 25px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.6em;
-}
-
-#romantique{
-    border:1px #f2f2f2 solid;
-    border-radius: 20px;
-}
-
-.fa-heart{
-    color:#0065FC;
-    border:1px #deebff solid;
-    border-radius: 25px;
-    background-color:#DEEBFF;
-    width: 25px;
-    height: 25px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.6em;
-}
-
-#animaux{
-    border:1px #f2f2f2 solid;
-    border-radius: 20px;
-}
-
-.fa-dog{
-    color:#0065FC;
-    border:1px #deebff solid;
-    border-radius: 25px;
-    background-color:#DEEBFF;
-    width: 25px;
-    height: 25px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.6em;
+    background-color: white;
+    cursor: pointer;
+    
 }
 
 <!-----------Information------------->
