@@ -14,7 +14,7 @@
 .logo-nav{
     display: flex;
     justify-content: space-between;
-    margin-left:  52px;
+    margin-left:  50px;
     margin-top: 38px;
     align-items: center;
 }
@@ -65,7 +65,7 @@ nav ul a{
 h2{
     font-weight: bold;
     font-size: 1em;
-    margin-left: 52px;
+    margin-left: 50px;
 }
 .ligne-2{
     font-size: 00.7em;
@@ -76,7 +76,7 @@ h2{
 /*---------barre de recherche-------*/
 
 form{
-    margin-left: 52px;
+    margin-left: 50px;
     display: flex;
 }
 
@@ -117,7 +117,7 @@ form{
     display:flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 52px;
+    margin-left: 50px;
 }
 
 filter span{
@@ -156,57 +156,131 @@ filter span{
 }
 
 <!-----------Information------------->
-
-.fa-info-circle{
-    color: white;
+#information{
+    margin-left: 50px;
+}
+.fa-info{
+    color: #0065FC;
+    font-size: 000.8em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border:2px #f2f2f2 solid;
+    padding: 6px 10px 6px 10px;
+    text-align: center;
+    margin-left: 50px; 
 }
 
-.information{
+#information span{
     font-size: 000.8em;
     font-weight: normal;
-    color:grey;
+    color: black;
 }
 
-/*------------------- SECTION HEBERGEMENT A MARSEILLE--------------------*/
+/*------------------- MAIN--------------------*/
 
-.section-hébergement{
-    background-color: #f2f2f2;
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
 }
 
-.nom-hotel{
-    font-size: 000.8em;
+/*--------------HEBERGEMENTS MARSEILLE--------------*/
+
+.Hébergements_Marseille{
+    border: 3px red solid;
+    border-radius: 20px;
+    background-color
+}
+
+.Hébergements_Marseille h2{
+    font-size: 1em;
     font-weight: bold;
 }
 
-.tarif-nuit{
-    font-size: 0.7em;
+.Hébergements_Marseille aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-span{
+.aperçu_hébergement{
+    border: 2px violet solid;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.aperçu_hébergement img{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.aperçu_hébergement span{
     font-weight: bold;
 }
 
-.blue-star{
-    font-size: 0.6em;
+.nom_hotel{
+    font-weight: bold;
+}
+
+.blue_star{
     color: #0065FC;
 }
 
-.grey-star{
-    font-size: 00.6em;
-    color: #f2f2f2;
+.grey_star{
+    color:#f2f2f2;
 }
 
-.aperçu-hébergement{
-    border: 1px red solid;
-    border-radius: 15px 5px 5px 15px;
-    box-shadow: ombre 
-    width: largeur du bloc 
-    height: hauteur du bloc 
-    padding: marge intérieur 
-    margin: marge extérieur
-
-
+.Hébergements_Marseille p a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8em;
+    cursor: pointer;
 }
+
+.Hébergements_Marseille p a:hover{
+    color:#0065FC;
+    font-weight: bold;
+}
+
+.populaire{
+    border: 3px red solid;
+}
+
+/*------------------------LES PLUS POPULAIRES--------------*/
+.populaire{
+    border: 3px red solid;
+    border-radius: 20px;
+}
+
+.populaire h2{
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.populaire aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.populaire_aperçu_hébergement{
+    border: 2px violet solid;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+}
+
+.populaire_aperçu_hébergement img{
+    border-radius: 20px 0px 0px 20px;
+}
+
 
 
 
@@ -217,26 +291,26 @@ span{
 }
 
 
-footer{ 
-    font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
-    font-size: 0.7em;
-    display:flex;
-    background-color: #f2f2f2;
-}
-
-h4{
+footer{
+    font-size: 0000.7em;
+    background-color:#f2f2f2;
     display: flex;
-    font-weight: bolder;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: absolute;
 }
 
-li{
-    list-style-type:none;
-}
-
-ul{
+footer ul{
+    list-style-type: none;
+    display: block;
+    line-height: 2;
     width: 33.33%;
+    
 }
 
-
+footer span{
+    font-weight: bold;
+}
 
       
