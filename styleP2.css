@@ -335,11 +335,17 @@ main{
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
+    margin-left: 52px;
 }
 
 /*---------vieux port-------*/
 .vieux_port{
     grid-area: 1 / 1 / 3 / 2;
+    border: 1px #f2f2f2 solid;
+    width: 303px;
+    height: 447px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .vieux_port img{
@@ -350,6 +356,10 @@ main{
 
 .vieux_port p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -357,6 +367,11 @@ main{
 
 .fort_pomegues{
     grid-area: 1 / 2 / 2 / 3;
+    border: 1px #f2f2f2 solid;
+    width: 300px;
+    height: 238px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
 .fort_pomegues img{
@@ -367,12 +382,21 @@ main{
 
 .fort_pomegues p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*-----------------Ile du frioul---------------*/
 
 .ile_frioul{
     grid-area: 2 / 2 / 3 / 3;
+    border: 1px #f2f2f2 solid;
+    width: 300px;
+    height: 164px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }
 
@@ -384,12 +408,20 @@ main{
 
 .ile_frioul p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*---------------Calanques------------*/
 .calanques{
     grid-area: 1 / 3 / 3 / 4;
-   
+    border: 1px #f2f2f2 solid;
+    width: 303px;
+    height: 447px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .calanques img{
@@ -400,40 +432,62 @@ main{
 
 .calanques p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*-------------------Notre Dame de la Garde-------------*/
 
 .Notre_dame_de_la_Garde{
     grid-area: 1 / 4 / 2 / 5;
-    
+    border: 1px #f2f2f2 solid;
+    width: 300px;
+    height: 193px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .Notre_dame_de_la_Garde img{
-    width:301px;
+    width: 300px;px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .Notre_dame_de_la_Garde p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*-------------Parc Longchamp---------------*/
 
 .parc_longchamp{
     grid-area: 2 / 4 / 3 / 5;
+    border: 1px #f2f2f2 solid;
+    width: 300px;
+    height: 209px;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: -40px;
     
 }
 
 .parc_longchamp img{
-    width: 301px;
+    width: 300px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .parc_longchamp p{
     font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
