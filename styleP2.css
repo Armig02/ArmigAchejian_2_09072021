@@ -320,6 +320,123 @@ main{
 }
 
 
+/*------------------------------------ACTIVITY------------------*/
+
+.activity h2{
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: 52px;
+
+}
+
+.liste_activity{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+/*---------vieux port-------*/
+.vieux_port{
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.vieux_port img{
+    width: 303px;
+    height: 385px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.vieux_port p{
+    font-weight: bold;
+}
+
+
+/*--------------fort pomegues---------*/
+
+.fort_pomegues{
+    grid-area: 1 / 2 / 2 / 3;
+
+}
+.fort_pomegues img{
+    width: 300px;
+    height: 179px;
+    border-radius:20px 20px 0px 0px ;
+}
+
+.fort_pomegues p{
+    font-weight: bold;
+}
+
+/*-----------------Ile du frioul---------------*/
+
+.ile_frioul{
+    grid-area: 2 / 2 / 3 / 3;
+    
+}
+
+.ile_frioul img{
+    width:300px;
+    height: 109px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.ile_frioul p{
+    font-weight: bold;
+}
+
+/*---------------Calanques------------*/
+.calanques{
+    grid-area: 1 / 3 / 3 / 4;
+   
+}
+
+.calanques img{
+    width: 303px;
+    height: 385px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.calanques p{
+    font-weight: bold;
+}
+
+/*-------------------Notre Dame de la Garde-------------*/
+
+.Notre_dame_de_la_Garde{
+    grid-area: 1 / 4 / 2 / 5;
+    
+}
+
+.Notre_dame_de_la_Garde img{
+    width:301px;
+    height: 137px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.Notre_dame_de_la_Garde p{
+    font-weight: bold;
+}
+
+/*-------------Parc Longchamp---------------*/
+
+.parc_longchamp{
+    grid-area: 2 / 4 / 3 / 5;
+    
+}
+
+.parc_longchamp img{
+    width: 301px;
+    height: 137px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.parc_longchamp p{
+    font-weight: bold;
+}
+
+
 
 
 
