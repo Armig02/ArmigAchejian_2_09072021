@@ -9,7 +9,7 @@
 
 /*-----------------------HEADER-----------------------*/
 
-/*-----nav----*/
+/*-----LOGO & NAV-------*/
 
 .logo-nav{
     display: flex;
@@ -24,11 +24,13 @@ nav ul{
     margin: 0px;
     justify-content: space-around;
     width: 100%;
-    font-size: 0000.8em;
+    font-size: 1em;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 22px;
     margin-right: 225px;
 }
+
+
 
 nav li{
     display: inline-block;
@@ -38,7 +40,12 @@ nav li{
     text-align: center;
 }
 
-.hébergements{
+nav li:hover{
+    font-size:1.2em;
+    text-shadow: #0065FC 1px 0 10px;
+}
+
+.nav_room{
     color: #0065FC;
     border: 1px solid white;
     padding-top: 50px;
@@ -46,7 +53,7 @@ nav li{
     border-top-width: 3px;
 }
 
-.activités{
+.nav_activity{
     text-decoration: none;
     color: black;
 }
@@ -56,75 +63,86 @@ nav ul a{
     
 }
 
-.inscription{
+.nav_inscription{
     color: #0065FC;
     font-weight: bold;
+    cursor: pointer;
 }
 
-/*----texte d'accroche------*/
-h2{
+/*----CONTENT ------*/
+.content h2{
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.3em;
     margin-left: 50px;
+    margin-top: 50px;
 }
-.ligne-2{
-    font-size: 00.7em;
-    font-weight: normal;
-    color: grey;
+.content p{
+    font-size: 1em;
+    margin-top: -5px;
+    margin-left: 50px;
+    margin-bottom: 25px;
 }
 
-/*---------barre de recherche-------*/
+/*---------SEARCH------*/
 
 form{
     margin-left: 50px;
+    margin-bottom: 30px;
     display: flex;
 }
 
 .fa-map-marker-alt{
-   background-color:#f2f2f2
-   font-size: 000.8em;
+   background-color:#f2f2f2;
+   font-size: 1em;
    display: flex;
    justify-content: center;
    align-items: center;
-   border-radius: 5px 0px 0px 5px;
+   border-radius: 15px 0px 0px 15px;
    border:1px #f2f2f2;
-   padding: 7px 10px 7px 10px;
+   padding: 15px 20px 15px 20px;
    text-align: center;
 }
 
-#ville{
-    border: 1px #f2f2f2 solid;
-    font-size: 000.8em;
+#place{
+    border: 1.5px #f2f2f2 solid;
+    font-size: 1em;
     color: black;
     border-right: #0065FC;
 }
 
-#Rechercher{
+#place:hover{
+    background-color: #deebff;
+}
+
+#search_button{
     color:white;
     background-color: #0065FC;
     border:1px #0065FC solid;
-    border-radius: 0px 5px 5px 0px;
-    font-size: 000.8em;
-    padding: 7px 10px 7px 10px;
+    border-radius: 0px 15px 15px 0px;
+    font-size: 1em;
+    padding: 15px 20px 15px 20px;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
 }
 
-/*----------filtres---------*/
 
-#filter{
+/*----------FILTER---------*/
+
+.filter{
     display:flex;
     align-items: center;
     margin-top: 15px;
     margin-left: 50px;
+    margin-bottom: 30px;
 }
 
-filter span{
-    font-size: 0.9em;
+.filter span{
+    font-size: 1.1em;
 }
 
-.filtres{
+
+.filter_name{
     display: flex;
     align-items: center;
     height: 40px;
@@ -132,9 +150,10 @@ filter span{
     border-radius: 30px;
     margin-left: 33px;
     cursor: pointer;
+    padding-right: 10px;
 }
 
-#filter div i{
+.filter_name i{
     color: #0065FC;
     width: 40px;
     height: 40px;
@@ -145,23 +164,29 @@ filter span{
     align-items: center;
     position: relative;
     left: -3px;
-
-}
-
-#filter div input{
-    border: none;
-    background-color: white;
-    cursor: pointer;
     
 }
 
+.filter_name input{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.filter_name input:hover{
+    color: #0065FC;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
 <!-----------Information------------->
-#information{
+.information{
     margin-left: 50px;
 }
-.fa-info{
+.information p i{
     color: #0065FC;
-    font-size: 000.8em;
+    font-size: 1em;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
@@ -171,8 +196,8 @@ filter span{
     margin-left: 50px; 
 }
 
-#information span{
-    font-size: 000.8em;
+.information span{
+    font-size: 1em;
     font-weight: normal;
     color: black;
 }
@@ -186,7 +211,7 @@ main{
     justify-content: space-between;
 }
 
-/*--------------HEBERGEMENTS MARSEILLE--------------*/
+/*--------------SECTION HEBERGEMENTS A MARSEILLE--------------*/
 
 .Hébergements_Marseille{
     border: 3px #f2f2f2 solid;
@@ -199,7 +224,7 @@ main{
 }
 
 .Hébergements_Marseille h2{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin-top: 46px;
     margin-left: 40px;
@@ -214,7 +239,7 @@ main{
     padding-bottom: 20px;
 }
 
-.aperçu_hébergement{
+.rooms_preview{
     border: 2px white solid;
     border-radius: 20px;
     background-color: white;
@@ -222,29 +247,32 @@ main{
     line-height: 10px;
 }
 
-.aperçu_hébergement img{
+.rooms_preview img{
     border-radius: 20px 20px 0px 0px;
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 3px;
 }
 
-.aperçu_hébergement span{
+.rooms_preview span{
     font-weight: bold;
 }
 
-.nom_hotel{
+.rooms_name{
     font-weight: bold;
     margin-left: 17px;
+    font-size: 1.1em;
 }
 
-.tarif{
+.rooms_price{
     margin-left: 17px;
+    font-size: 1em;
 }
 
 .star{
     margin-left: 17px;
     margin-bottom: 10px;
+    font-size: 1em;
 }
 .blue_star{
     color: #0065FC;
@@ -257,11 +285,10 @@ main{
 .Hébergements_Marseille p a {
     text-decoration: none;
     color: black;
-    font-size: 0.8em;
+    font-size: 1em;
     cursor: pointer;
     font-weight: bold;
     margin-left: 47px;
-    font-size: 1em;
     line-height: 40px;
 }
 
@@ -272,8 +299,8 @@ main{
 
 
 
-/*------------------------LES PLUS POPULAIRES--------------*/
-.populaire{
+/*------------------------SECION LES PLUS POPULAIRES--------------*/
+.popular{
     border: 3px #f2f2f2 solid;
     border-radius: 20px;
     margin-left: 40px;
@@ -282,8 +309,8 @@ main{
     padding-bottom: 64px;
 }
 
-.populaire h2{
-    font-size: 1em;
+.popular h2{
+    font-size: 1.2em;
     font-weight: bold;
     display: flex;
     align-items: baseline;
@@ -292,7 +319,7 @@ main{
     margin-right: 30px;
 }
 
-.populaire aside{
+.popular aside{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -300,7 +327,7 @@ main{
     
 }
 
-.populaire_aperçu_hébergement{
+.popular_rooms_preview{
     border: 2px white solid;
     border-radius: 20px;
     background-color: white;
@@ -308,34 +335,43 @@ main{
     display: flex;
 }
 
-.populaire_aperçu_hébergement img{
+.popular_rooms_preview img{
     border-radius: 20px 0px 0px 20px;
     padding-left: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
 }
 
-.populaire_star{
+.popular_star{
     margin-left: 17px;
+    font-size: 1em;
 }
 
 
 /*------------------------------------ACTIVITY------------------*/
 
 .activity h2{
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: bold;
     margin-left: 52px;
 
 }
 
-.liste_activity{
+.activity_list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 40px;
     grid-row-gap: 40px;
     margin-left: 52px;
+}
+
+.activity_list p{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /*---------vieux port-------*/
@@ -352,14 +388,6 @@ main{
     width: 303px;
     height: 385px;
     border-radius: 20px 20px 0px 0px;
-}
-
-.vieux_port p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 
@@ -380,13 +408,6 @@ main{
     border-radius:20px 20px 0px 0px ;
 }
 
-.fort_pomegues p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 /*-----------------Ile du frioul---------------*/
 
@@ -406,13 +427,6 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
-.ile_frioul p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 /*---------------Calanques------------*/
 .calanques{
@@ -430,13 +444,7 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
-.calanques p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 /*-------------------Notre Dame de la Garde-------------*/
 
@@ -455,13 +463,7 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
-.Notre_dame_de_la_Garde p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 
 /*-------------Parc Longchamp---------------*/
 
@@ -482,15 +484,6 @@ main{
     border-radius: 20px 20px 0px 0px;
 }
 
-.parc_longchamp p{
-    font-weight: bold;
-    font-size: 1em;
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-
 
 
 
@@ -502,7 +495,7 @@ main{
 
 
 footer{
-    font-size: 0000.7em;
+    font-size: 1em;
     background-color:#f2f2f2;
     display: flex;
     padding-top: 30px;
@@ -516,10 +509,12 @@ footer ul{
     display: block;
     line-height: 2;
     width: 33.33%;
+    font-size: 1em;
     
 }
 
 footer span{
+    font-size: 1.1em;
     font-weight: bold;
 }
 
