@@ -42,7 +42,6 @@ nav li{
 
 nav li:hover{
     font-size:1.2em;
-    text-shadow: #0065FC 1px 0 10px;
 }
 
 .nav_room{
@@ -111,7 +110,7 @@ form{
 }
 
 #place:hover{
-    background-color: #deebff;
+    border-color: #0065FC;
 }
 
 #search_button{
@@ -220,14 +219,21 @@ main{
     height: 618px;
     width: 866px;
     background-color: #f2f2f2;
-    
+    margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .Hébergements_Marseille h2{
     font-size: 1.2em;
     font-weight: bold;
-    margin-top: 46px;
-    margin-left: 40px;
+    margin-top: 40px;
+    margin-left: 44px;
+
+}
+
+.Hébergements_Marseille h2:hover{
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
 .Hébergements_Marseille aside{
@@ -237,6 +243,8 @@ main{
     justify-content: space-evenly;
     row-gap: 25px;
     padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .rooms_preview{
@@ -246,7 +254,10 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     line-height: 10px;
 }
-
+.rooms_preview:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
 .rooms_preview img{
     border-radius: 20px 20px 0px 0px;
     padding-left: 3px;
@@ -305,8 +316,10 @@ main{
     border-radius: 20px;
     margin-left: 40px;
     background-color: #f2f2f2;
-    padding-top: 31px;
-    padding-bottom: 64px;
+    border-right-width: 40px;
+    border-left-width: 40px;
+    border-top-width: 28px;
+    border-bottom-width: 68px;
 }
 
 .popular h2{
@@ -315,16 +328,21 @@ main{
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.popular h2:hover{
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
 .popular aside{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    row-gap: 25px;
-    
+    row-gap: 30px;
+
 }
 
 .popular_rooms_preview{
@@ -333,6 +351,12 @@ main{
     background-color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
+    width: 336px;
+}
+
+.popular_rooms_preview:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
 }
 
 .popular_rooms_preview img{
@@ -354,7 +378,7 @@ main{
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 52px;
-
+    margin-top: 65px;
 }
 
 .activity_list{
@@ -365,6 +389,7 @@ main{
     grid-row-gap: 40px;
     margin-left: 52px;
 }
+
 
 .activity_list p{
     font-weight: bold;
@@ -382,6 +407,11 @@ main{
     height: 447px;
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.vieux_port:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
 }
 
 .vieux_port img{
@@ -402,6 +432,12 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
+
+.fort_pomegues:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
+
 .fort_pomegues img{
     width: 300px;
     height: 179px;
@@ -421,6 +457,11 @@ main{
     
 }
 
+.ile_frioul:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
+
 .ile_frioul img{
     width:300px;
     height: 109px;
@@ -438,12 +479,16 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.calanques:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
+
 .calanques img{
     width: 303px;
     height: 385px;
     border-radius: 20px 20px 0px 0px;
 }
-
 
 
 /*-------------------Notre Dame de la Garde-------------*/
@@ -457,12 +502,16 @@ main{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.Notre_dame_de_la_Garde:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
+
 .Notre_dame_de_la_Garde img{
     width: 300px;px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
 }
-
 
 
 /*-------------Parc Longchamp---------------*/
@@ -478,6 +527,11 @@ main{
     
 }
 
+.parc_longchamp:hover{
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.904) 0px 22px 70px 4px;
+}
+
 .parc_longchamp img{
     width: 300px;
     height: 137px;
@@ -486,13 +540,10 @@ main{
 
 
 
-
 <!----------------------------FOOTER ------------------------>
-
 @font-face {   font-family: Raleway-Regular;
     src: url(Raleway-Regular.ttf)
 }
-
 
 footer{
     font-size: 1em;
@@ -500,6 +551,7 @@ footer{
     display: flex;
     padding-top: 30px;
     padding-bottom: 15px;
+    padding-right: 30px;
     width: 100%;
     position: absolute;
 }
@@ -509,13 +561,19 @@ footer ul{
     display: block;
     line-height: 2;
     width: 33.33%;
-    font-size: 1em;
-    
+    margin-left: 15px;
+    margin-right: 50px;
+    cursor: pointer;
 }
 
 footer span{
     font-size: 1.1em;
     font-weight: bold;
+    cursor: pointer;
+}
+
+footer li:hover{
+    font-size: 1.2em;
 }
 
       
