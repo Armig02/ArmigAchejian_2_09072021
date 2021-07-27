@@ -6,6 +6,10 @@
     font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
 }
 
+body{
+    margin: 0px;
+    max-width: 1400px;
+}
 /*-----------------------HEADER-----------------------*/
 
 /*-----LOGO & NAV-------*/
@@ -28,8 +32,6 @@ nav ul{
     margin-top: 22px;
     margin-right: 225px;
 }
-
-
 
 nav li{
     display: inline-block;
@@ -64,6 +66,8 @@ nav ul a{
     font-weight: bold;
     cursor: pointer;
 }
+
+
 
 /*----CONTENT ------*/
 .content h2{
@@ -548,7 +552,7 @@ footer{
     display: flex;
     padding-top: 30px;
     padding-bottom: 15px;
-    padding-right: 30px;
+    padding-right: 20px;
     width: 100%;
     position: absolute;
 }
@@ -573,4 +577,5 @@ footer li:hover{
     font-size: 1.2em;
 }
 
-      
+
+
