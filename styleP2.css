@@ -6,7 +6,6 @@
     font-family: "Raleway-Regular", "arial", "verdana", "georgia", "times new roman", "san serif";
 }
 
-
 /*-----------------------HEADER-----------------------*/
 
 /*-----LOGO & NAV-------*/
@@ -41,15 +40,13 @@ nav li{
 }
 
 nav li:hover{
-    font-size:1.2em;
+    border: 1px solid white;
+    border-top-color: #0065FC;
+    border-top-width: 3px;
 }
 
 .nav_room{
     color: #0065FC;
-    border: 1px solid white;
-    padding-top: 50px;
-    border-top-color: #0065FC;
-    border-top-width: 3px;
 }
 
 .nav_activity{
@@ -179,7 +176,8 @@ form{
 }
 
 
-<!-----------Information------------->
+/*-----------Information-------------*/
+
 .information{
     margin-left: 50px;
 }
@@ -508,7 +506,7 @@ main{
 }
 
 .Notre_dame_de_la_Garde img{
-    width: 300px;px;
+    width: 300px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -539,8 +537,7 @@ main{
 }
 
 
-
-<!----------------------------FOOTER ------------------------>
+/*----------------------------FOOTER ------------------------*/
 @font-face {   font-family: Raleway-Regular;
     src: url(Raleway-Regular.ttf)
 }
