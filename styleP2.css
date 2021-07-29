@@ -265,6 +265,7 @@ main{
     padding-left: 3px;
     padding-right: 3px;
     padding-top: 3px;
+    object-fit: cover;
 }
 
 .rooms_preview span{
@@ -366,6 +367,7 @@ main{
     padding-left: 3px;
     padding-top: 3px;
     padding-bottom: 3px;
+    object-fit: cover;
 }
 
 .popular_star{
@@ -420,6 +422,7 @@ main{
     width: 303px;
     height: 385px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
@@ -444,6 +447,7 @@ main{
     width: 300px;
     height: 179px;
     border-radius:20px 20px 0px 0px ;
+    object-fit: cover;
 }
 
 
@@ -468,6 +472,7 @@ main{
     width:300px;
     height: 109px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
@@ -490,6 +495,7 @@ main{
     width: 303px;
     height: 385px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
@@ -513,6 +519,7 @@ main{
     width: 300px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
@@ -538,6 +545,7 @@ main{
     width: 300px;
     height: 137px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 
 
