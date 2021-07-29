@@ -7,8 +7,7 @@
 }
 
 body{
-    margin: 0px;
-    max-width: 1400px;
+    overflow-x: hidden;
 }
 /*-------HEADER-----------------------*/
 
@@ -17,9 +16,9 @@ body{
 .logo-nav{
     display: flex;
     justify-content: space-between;
-    margin-left:  50px;
     margin-top: 38px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 nav ul{
@@ -39,33 +38,31 @@ nav li{
     padding: 0px;
     height: 40px;
     text-align: center;
+   
 }
 
-nav li:hover{
+nav li a:hover{
     border: 1px solid white;
     border-top-color: #0065FC;
+    padding-top: 30px;
     border-top-width: 3px;
-}
-
-.nav_room{
     color: #0065FC;
+    font-weight: bold;
 }
 
-.nav_activity{
+
+nav ul a{
     text-decoration: none;
     color: black;
 }
 
-nav ul a{
-    text-decoration: none;
-    
+.nav_inscription{
+    font-weight: bold;
+    color: #0065FC;
 }
 
-.nav_inscription{
-    color: #0065FC;
-    font-weight: bold;
-    cursor: pointer;
-}
+
+
 
 
 
@@ -73,20 +70,17 @@ nav ul a{
 .content h2{
     font-weight: bold;
     font-size: 1.3em;
-    margin-left: 50px;
     margin-top: 50px;
 }
 .content p{
     font-size: 1em;
-    margin-top: -5px;
-    margin-left: 50px;
+    margin-top: -5px
     margin-bottom: 25px;
 }
 
 /*---------SEARCH------*/
 
 form{
-    margin-left: 50px;
     margin-bottom: 30px;
     display: flex;
 }
@@ -126,21 +120,21 @@ form{
     cursor: pointer;
 }
 
-
 /*----------FILTER---------*/
 
 .filter{
     display:flex;
     align-items: center;
     margin-top: 15px;
-    margin-left: 50px;
     margin-bottom: 30px;
+    width: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .filter span{
     font-size: 1.1em;
 }
-
 
 .filter_name{
     display: flex;
@@ -148,7 +142,6 @@ form{
     height: 40px;
     border: 2px solid #f2f2f2;
     border-radius: 30px;
-    margin-left: 33px;
     cursor: pointer;
     padding-right: 10px;
 }
@@ -179,12 +172,8 @@ form{
     font-size: 1.2em;
 }
 
-
 /*-----------Information-------------*/
 
-.information{
-    margin-left: 50px;
-}
 .information p i{
     color: #0065FC;
     font-size: 1em;
@@ -194,7 +183,6 @@ form{
     border:2px #f2f2f2 solid;
     padding: 6px 10px 6px 10px;
     text-align: center;
-    margin-left: 50px; 
 }
 
 .information span{
@@ -210,6 +198,7 @@ main{
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    /*flex-wrap: wrap;*/
 }
 
 /*--------------SECTION HEBERGEMENTS A MARSEILLE--------------*/
@@ -217,9 +206,8 @@ main{
 .Hébergements_Marseille{
     border: 3px #f2f2f2 solid;
     border-radius: 20px;
-    margin-left:47px;
     height: 618px;
-    width: 866px;
+    width: 900px;
     background-color: #f2f2f2;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -229,7 +217,7 @@ main{
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 40px;
-    margin-left: 44px;
+    margin-left: 25px;
 
 }
 
@@ -312,12 +300,14 @@ main{
 }
 
 
-
 /*------------------------SECION LES PLUS POPULAIRES--------------*/
 .popular{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     border: 3px #f2f2f2 solid;
     border-radius: 20px;
-    margin-left: 40px;
+    margin-left: 30px;
     background-color: #f2f2f2;
     border-right-width: 40px;
     border-left-width: 40px;
@@ -375,25 +365,27 @@ main{
     font-size: 1em;
 }
 
-
 /*------------------------------------ACTIVITY------------------*/
+
 
 .activity h2{
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: 52px;
     margin-top: 65px;
+}
+
+.activity h2:hover{
+    font-size: 1.3em;
+    cursor: pointer;
 }
 
 .activity_list{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 40px;
+    grid-column-gap: 11px;
     grid-row-gap: 40px;
-    margin-left: 52px;
 }
-
 
 .activity_list p{
     font-weight: bold;
@@ -425,7 +417,6 @@ main{
     object-fit: cover;
 }
 
-
 /*--------------fort pomegues---------*/
 
 .fort_pomegues{
@@ -449,7 +440,6 @@ main{
     border-radius:20px 20px 0px 0px ;
     object-fit: cover;
 }
-
 
 /*-----------------Ile du frioul---------------*/
 
@@ -475,7 +465,6 @@ main{
     object-fit: cover;
 }
 
-
 /*---------------Calanques------------*/
 .calanques{
     grid-area: 1 / 3 / 3 / 4;
@@ -497,7 +486,6 @@ main{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
-
 
 /*-------------------Notre Dame de la Garde-------------*/
 
@@ -521,7 +509,6 @@ main{
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
-
 
 /*-------------Parc Longchamp---------------*/
 
@@ -548,7 +535,6 @@ main{
     object-fit: cover;
 }
 
-
 /*----------------------------FOOTER ------------------------*/
 
 footer{
@@ -558,17 +544,15 @@ footer{
     padding-top: 30px;
     padding-bottom: 15px;
     padding-right: 20px;
-    width: 100%;
-    position: absolute;
+    width: 100%; 
+    flex-wrap: wrap;
 }
 
 footer ul{
     list-style-type: none;
     display: block;
     line-height: 2;
-    width: 33.33%;
-    margin-left: 15px;
-    margin-right: 50px;
+    width: 30%;
     cursor: pointer;
 }
 
@@ -581,6 +565,3 @@ footer span{
 footer li:hover{
     font-size: 1.2em;
 }
-
-
-
