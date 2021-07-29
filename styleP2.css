@@ -10,7 +10,7 @@ body{
     margin: 0px;
     max-width: 1400px;
 }
-/*-----------------------HEADER-----------------------*/
+/*-------HEADER-----------------------*/
 
 /*-----LOGO & NAV-------*/
 
@@ -542,9 +542,6 @@ main{
 
 
 /*----------------------------FOOTER ------------------------*/
-@font-face {   font-family: Raleway-Regular;
-    src: url(Raleway-Regular.ttf)
-}
 
 footer{
     font-size: 1em;
