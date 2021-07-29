@@ -368,6 +368,7 @@ main{
 /*------------------------------------ACTIVITY------------------*/
 
 
+
 .activity h2{
     font-size: 1.2em;
     font-weight: bold;
@@ -381,11 +382,20 @@ main{
 
 .activity_list{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 11px;
+    grid-column-gap: 10px;
     grid-row-gap: 40px;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+        "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+        "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+        "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+        "vieux_port ile_frioul calanques parc_longchamp"
+        "vieux_port ile_frioul calanques parc_longchamp";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 160px 1fr;
 }
+      
 
 .activity_list p{
     font-weight: bold;
@@ -397,7 +407,7 @@ main{
 
 /*---------vieux port-------*/
 .vieux_port{
-    grid-area: 1 / 1 / 3 / 2;
+    grid-area: vieux_port;
     border: 1px #f2f2f2 solid;
     width: 303px;
     height: 447px;
@@ -420,7 +430,7 @@ main{
 /*--------------fort pomegues---------*/
 
 .fort_pomegues{
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: fort_pomegues;
     border: 1px #f2f2f2 solid;
     width: 300px;
     height: 238px;
@@ -444,7 +454,7 @@ main{
 /*-----------------Ile du frioul---------------*/
 
 .ile_frioul{
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: ile_frioul;
     border: 1px #f2f2f2 solid;
     width: 300px;
     height: 164px;
@@ -467,7 +477,7 @@ main{
 
 /*---------------Calanques------------*/
 .calanques{
-    grid-area: 1 / 3 / 3 / 4;
+    grid-area: calanques;
     border: 1px #f2f2f2 solid;
     width: 303px;
     height: 447px;
@@ -490,7 +500,7 @@ main{
 /*-------------------Notre Dame de la Garde-------------*/
 
 .Notre_dame_de_la_Garde{
-    grid-area: 1 / 4 / 2 / 5;
+    grid-area: Notre_dame_de_la_Garde;
     border: 1px #f2f2f2 solid;
     width: 300px;
     height: 193px;
@@ -513,7 +523,7 @@ main{
 /*-------------Parc Longchamp---------------*/
 
 .parc_longchamp{
-    grid-area: 2 / 4 / 3 / 5;
+    grid-area: parc_longchamp;
     border: 1px #f2f2f2 solid;
     width: 300px;
     height: 209px;
