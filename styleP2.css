@@ -12,7 +12,13 @@ body{
     max-width: 1400px;
 }
 
+
+
 /*-------HEADER-----------------------*/
+
+.all_but_not_footer{
+    margin-left: 15px;
+}
 
 /*-----LOGO & NAV-------*/
 
@@ -128,8 +134,12 @@ form{
     margin-top: 15px;
     margin-bottom: 30px;
     width: 800px;
-    justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.filter_tablet_responsive{
+    display: flex;
+  
 }
 
 .filter span{
@@ -172,6 +182,18 @@ form{
     font-size: 1.2em;
 }
 
+.tablet1{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.tablet2{
+    margin-right: 20px;
+}
+
+.tablet3{
+    margin-right: 20px;
+}
 /*-----------Information-------------*/
 
 .information p i{
@@ -197,7 +219,6 @@ main{
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -207,7 +228,7 @@ main{
     border: 3px #f2f2f2 solid;
     border-radius: 20px;
     height: 618px;
-    width: 900px;
+    width: 65%;
     background-color: #f2f2f2;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -228,13 +249,15 @@ main{
 
 .Hébergements_Marseille aside{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-evenly;
     row-gap: 25px;
     padding-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    width: 100%;
+
 }
 
 .rooms_preview{
@@ -313,6 +336,7 @@ main{
     border-left-width: 40px;
     border-top-width: 28px;
     border-bottom-width: 68px;
+    width: 25%;
 }
 
 .popular h2{
@@ -382,7 +406,7 @@ main{
 
 .activity_list{
     display: grid;
-    grid-column-gap: 10px;
+    grid-column-gap: 3%;
     grid-row-gap: 40px;
     width: 100%;
     height: 100%;
@@ -553,7 +577,6 @@ footer{
     display: flex;
     padding-top: 30px;
     padding-bottom: 15px;
-    padding-right: 20px;
     width: 100%; 
     flex-wrap: wrap;
     margin-right: 0px;
@@ -582,13 +605,14 @@ footer li:hover{
 
 /* --MEDIA QUERIES--*/
 
-/*--TABLETTES--*/
+
+/* Responsive Laptop L & 4k */
 
 @media (min-width: 1440px) and (max-width: 2560px){
 
     .activity_list{
             display: grid;
-            grid-column-gap: 63px;
+            grid-column-gap: 3%;
             grid-row-gap: 40px;
             width: 100%;
             height: 100%;
@@ -601,4 +625,114 @@ footer li:hover{
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 160px 1fr;
         }
+}
+
+/* Responsive Tablet */
+
+@media (max-width: 768px){
+
+    .all_but_not_footer{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .filter_tablet_responsive{
+        display: grid;
+        grid-column-gap:50px;
+        grid-row-gap:10px;
+        grid-template-areas: 
+            "tablet1 tablet2"
+            "tablet3 tablet4";
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .filter span{
+        margin-bottom: 20px;
+    }
+
+    .filter{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .filter_name{
+        width: 180px;
+    }
+
+    main{
+        flex-direction: column-reverse;
+    }
+
+    .popular{
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .popular_rooms_preview{
+        width: 95%;   
+    }
+
+    .Hébergements_Marseille{
+        width: 100%;
+        height: 100%;
+    }
+
+    .Hébergements_Marseille h2{
+        margin-left: 48px;
+    }
+
+    .Hébergements_Marseille aside{
+        display: flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 30px;
+    }
+
+    .rooms_preview{
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+        margin-left: 4%;
+        
+    }
+
+    .rooms_preview img{
+        border-radius: 20px 0px 0px 20px;
+        padding-left: 3px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        object-fit: cover;
+        width: 127px;
+        height: 138px;
+    }
+
+    .room_description{
+        line-height: 22px;
+    }
+
+    .activity_list{
+        display: grid;
+        grid-column-gap: 63px;
+        grid-row-gap: 40px;
+        width: 100%;
+        height: 100%;
+        grid-template-areas: 
+            "vieux_port fort_pomegues"
+            "vieux_port ile_frioul"
+            "calanques Notre_dame_de_la_Garde"
+            "calanques parc_longchamp";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 160px 1fr;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-right: 100%;
+        margin: none;
+    }
+    
+
 }
