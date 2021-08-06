@@ -715,6 +715,10 @@ footer li:hover {
       padding-right: 20px;
   }
 
+  .nav_list{
+      margin-left: 450px;
+  }
+
 
   .filter_tablet_responsive {
     display: grid;
