@@ -17,7 +17,8 @@ body {
 /*-------HEADER-----------------------*/
 
 .all_but_not_footer {
-  margin-left: 50px;
+    margin-left: 30px;
+
 }
 
 /*-----LOGO & NAV-------*/
@@ -37,7 +38,11 @@ body {
   font-size: 1em;
   text-align: center;
   margin-top: 22px;
-  margin-left: 740px;
+  margin-left: 650px;
+}
+
+.small_nav{
+    display: flex;
 }
 
 .small_nav a {
@@ -221,6 +226,7 @@ main {
   flex-direction: row;
   align-items: baseline;
   flex-wrap: wrap;
+  padding-right: 10px;
 }
 
 /*--------------SECTION HEBERGEMENTS A MARSEILLE--------------*/
@@ -239,7 +245,7 @@ main {
   font-size: 1.2em;
   font-weight: bold;
   margin-top: 40px;
-  margin-left: 54px;
+  margin-left: 25px;
 }
 
 .Hébergements_Marseille h2:hover {
@@ -249,14 +255,13 @@ main {
 
 .Hébergements_Marseille aside {
   display: flex;
-  flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 25px;
   padding-bottom: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  width: 100%;
+  width: 98%;
 }
 
 .rooms_preview {
@@ -312,7 +317,7 @@ main {
   font-size: 1em;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 47px;
+  margin-left: 20px;
   line-height: 40px;
 }
 
@@ -328,10 +333,10 @@ main {
   flex-wrap: wrap;
   border: 3px #f2f2f2 solid;
   border-radius: 20px;
-  margin-left: 30px;
+  margin-left: 33px;
   background-color: #f2f2f2;
-  border-right-width: 40px;
-  border-left-width: 40px;
+  border-right-width: 54px;
+  border-left-width: 26px;
   border-top-width: 28px;
   border-bottom-width: 68px;
   width: 25%;
@@ -365,7 +370,7 @@ main {
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
-  width: 336px;
+  width: 325px;
 }
 
 .popular_rooms_preview:hover {
@@ -389,7 +394,7 @@ main {
 /*------------------------------------ACTIVITY------------------*/
 
 .activity{
-    width: 1335px;
+    width: 98%;
 }
 
 .activity h2 {
@@ -407,7 +412,7 @@ main {
   display: grid;
   grid-column-gap: 3%;
   grid-row-gap: 40px;
-  width: 100%;
+  width: 95%;
   height: 100%;
   grid-template-areas:
     "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
@@ -431,7 +436,7 @@ main {
 .vieux_port {
   grid-area: vieux_port;
   border: 1px #f2f2f2 solid;
-  width: 303px;
+  width: 290px;
   height: 447px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -443,7 +448,7 @@ main {
 }
 
 .vieux_port img {
-  width: 303px;
+  width: 290px;
   height: 385px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -454,7 +459,7 @@ main {
 .fort_pomegues {
   grid-area: fort_pomegues;
   border: 1px #f2f2f2 solid;
-  width: 300px;
+  width: 290px;
   height: 238px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -466,7 +471,7 @@ main {
 }
 
 .fort_pomegues img {
-  width: 300px;
+  width: 290px;
   height: 179px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -477,7 +482,7 @@ main {
 .ile_frioul {
   grid-area: ile_frioul;
   border: 1px #f2f2f2 solid;
-  width: 300px;
+  width: 290px;
   height: 164px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -489,7 +494,7 @@ main {
 }
 
 .ile_frioul img {
-  width: 300px;
+  width: 290px;
   height: 109px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -499,7 +504,7 @@ main {
 .calanques {
   grid-area: calanques;
   border: 1px #f2f2f2 solid;
-  width: 303px;
+  width: 290px;
   height: 447px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -511,7 +516,7 @@ main {
 }
 
 .calanques img {
-  width: 303px;
+  width: 290px;
   height: 385px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -522,7 +527,7 @@ main {
 .Notre_dame_de_la_Garde {
   grid-area: Notre_dame_de_la_Garde;
   border: 1px #f2f2f2 solid;
-  width: 300px;
+  width: 290px;
   height: 193px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -534,7 +539,7 @@ main {
 }
 
 .Notre_dame_de_la_Garde img {
-  width: 300px;
+  width: 290px;
   height: 137px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -545,7 +550,7 @@ main {
 .parc_longchamp {
   grid-area: parc_longchamp;
   border: 1px #f2f2f2 solid;
-  width: 300px;
+  width: 290px;
   height: 209px;
   border-radius: 20px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -558,7 +563,7 @@ main {
 }
 
 .parc_longchamp img {
-  width: 300px;
+  width: 290px;
   height: 137px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -575,6 +580,7 @@ footer {
   width: 1410px;;
   flex-wrap: wrap;
   padding-right: 21px;
+  margin-left: 0px;
 }
 
 footer ul {
@@ -603,6 +609,11 @@ footer li:hover {
 /* Responsive 4k */
 
 @media (min-width: 2560px) {
+
+    .activity{
+        width: 100%;
+    }
+
   .activity_list {
     display: grid;
     grid-column-gap: 3%;
@@ -618,14 +629,40 @@ footer li:hover {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 160px 1fr;
   }
-}
+
+  footer{
+      width: 1400px;
+      padding-right: 0px;
+  }
+
+  footer ul{
+      width: 29%;
+  }
+
+  }
 
 /*Responsive Laptop 1440px */
 
 @media (max-width: 1440px) and (min-width:1025px) {
 
+    .all_but_not_footer{
+        margin-left: 10px;
+    }
+
+    .Hébergements_Marseille h2{
+        margin-left: 50px;
+    }
+    
+    .Hébergements_Marseille p a{
+        margin-left: 50px;
+    }
+
     main{
         padding-right: 34px;
+    }
+
+    .activity{
+        width: 100%;
     }
 
     .activity_list {
@@ -654,6 +691,10 @@ footer li:hover {
 
 @media (max-width: 1024px) and (min-width:769px){
 
+    .all_but_not_footer{
+        margin-left: 10px;
+    }
+
     .logo_nav{
         display: flex;
         justify-content: flex-start;
@@ -679,17 +720,29 @@ footer li:hover {
         height: 100%;
         padding-right: 20px;
     }
-  
+
+    .Hébergements_Marseille h2{
+        margin-left: 50px;
+    }
+
+    .Hébergements_Marseille p a{
+        margin-left: 50px;
+    }
+
+
     .popular{
         width: 34%;
         padding-bottom: 240px;
     }
+
+    .activity h2{
+        margin-left: 10px;
+    }
   
     .activity_list {
       display: grid;
-      grid-column-gap: 30%;
       grid-row-gap: 40px;
-      width: 100%;
+      width: 140%;
       height: 100%;
       grid-template-areas:
         "vieux_port fort_pomegues"
@@ -704,12 +757,16 @@ footer li:hover {
     footer{
         flex-wrap: nowrap;
     }
+
+    footer ul{
+        width: 26%;
+    }
   }
 
 
 /* Responsive Tablet */
 
-@media (max-width: 768px) and (min-width:321px) {
+@media (max-width: 768px) and (min-width:376px) {
   
     .small_nav{
         display: flex;
@@ -825,7 +882,7 @@ footer li:hover {
     display: grid;
     grid-column-gap: 63px;
     grid-row-gap: 40px;
-    width: 100%;
+    width: 55%;
     height: 100%;
     grid-template-areas:
       "vieux_port fort_pomegues"
@@ -840,12 +897,13 @@ footer li:hover {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: -30%;
+    width: 100%;
   }
 }
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
 
     .all_but_not_footer{
         margin-left: 0px;
@@ -1079,7 +1137,7 @@ footer li:hover {
     }
 
     .vieux_port{
-        width: 94%;
+        width: 48%;
         height: 200px;
     }
 
@@ -1091,7 +1149,7 @@ footer li:hover {
     }
 
     .fort_pomegues{
-        width: 94%;
+        width: 48%;
         height: 200px;
     }
     
@@ -1103,7 +1161,7 @@ footer li:hover {
     }
 
     .ile_frioul{
-        width: 94%;
+        width: 48%;
         height: 200px;
     }
 
@@ -1115,7 +1173,7 @@ footer li:hover {
     }
 
     .calanques{
-        width: 94%;
+        width: 48%;
         height: 200px;
     }
 
@@ -1127,7 +1185,7 @@ footer li:hover {
     }
 
     .Notre_dame_de_la_Garde{
-        width: 94%;
+        width: 48%;
         height: 200px;
     }
 
@@ -1139,7 +1197,7 @@ footer li:hover {
     }
 
     .parc_longchamp{
-        width: 94%;
+        width: 48%;
         height: 200px;
         margin-top: 0px;
     }
