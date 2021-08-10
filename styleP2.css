@@ -906,7 +906,7 @@ footer li:hover {
 @media (max-width: 375px) {
 
     .all_but_not_footer{
-        margin-left: 0px;
+        margin-left: 5px;
     }
 
     header{
