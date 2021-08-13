@@ -28,6 +28,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-left: 25px;
 }
 
 .nav_list {
@@ -245,7 +246,7 @@ main {
   font-size: 1.2em;
   font-weight: bold;
   margin-top: 40px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 .Hébergements_Marseille h2:hover {
@@ -317,7 +318,7 @@ main {
   font-size: 1em;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 30px;
   line-height: 40px;
 }
 
@@ -610,6 +611,24 @@ footer li:hover {
 
 @media (min-width: 2560px) {
 
+    .logo_nav{
+        margin-left: 0px;
+    }
+
+    .nav_list{
+        justify-content: normal;
+        margin-left: 815px;
+    }
+
+    .Hébergements_Marseille h2{
+        margin-left: 50px;
+    }
+
+    .Hébergements_Marseille p a{
+        margin-left: 50px;
+    }
+
+
     .activity{
         width: 100%;
     }
@@ -648,6 +667,17 @@ footer li:hover {
     .all_but_not_footer{
         margin-left: 10px;
     }
+
+    .logo_nav{
+        margin-left: 0px;
+    }
+
+    .nav_list{
+        justify-content: normal;
+        margin-left: 60%;
+    }
+
+
 
     .Hébergements_Marseille h2{
         margin-left: 50px;
@@ -722,13 +752,12 @@ footer li:hover {
     }
 
     .Hébergements_Marseille h2{
-        margin-left: 50px;
+        margin-left: 30px;
     }
 
     .Hébergements_Marseille p a{
-        margin-left: 50px;
+        margin-left: 30px;
     }
-
 
     .popular{
         width: 34%;
@@ -740,22 +769,82 @@ footer li:hover {
     }
   
     .activity_list {
-      display: grid;
-      grid-row-gap: 40px;
-      width: 140%;
-      height: 100%;
-      grid-template-areas:
-        "vieux_port fort_pomegues"
-        "vieux_port ile_frioul"
-        "calanques Notre_dame_de_la_Garde"
-        "calanques parc_longchamp";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 170px;
-      padding-bottom: 60px;
+        display: grid;
+        grid-column-gap: 30px;
+        grid-row-gap: 40px;
+        width: 100%;
+        height: 100%;
+        grid-template-areas:
+          "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+          "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+          "vieux_port fort_pomegues calanques Notre_dame_de_la_Garde"
+          "vieux_port ile_frioul calanques parc_longchamp"
+          "vieux_port ile_frioul calanques parc_longchamp";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 160px 1fr;
+    }
+
+    .vieux_port{
+        width: 225px;
+        height: 440px;
+    }
+    
+
+    .vieux_port img{
+        width: 225px;
+    }
+
+    .fort_pomegues{
+        width: 230px;
+    }
+
+    .fort_pomegues img{
+        width: 230px;
+    }
+
+    .ile_frioul{
+        width: 230px;
+        height: 160px;
+    }
+
+    .ile_frioul img{
+        width: 230px;
+    }
+
+    .calanques{
+        width: 225px;
+        height: 440px;
+    }
+
+    .calanques img{
+        width: 225px;
+    }
+
+    .Notre_dame_de_la_Garde{
+        width: 230px;
+    }
+
+    .Notre_dame_de_la_Garde img{
+        width: 230px;
+    }
+
+    .parc_longchamp{
+        width: 230px;
+        height: 200px;
+    }
+
+    .parc_longchamp img{
+        width: 230px;
+    }
+
+    .activity_list p{
+        font-size: 0.9em;
+        margin-top: 15px;
     }
   
     footer{
         flex-wrap: nowrap;
+        width:100%;
     }
 
     footer ul{
@@ -767,6 +856,18 @@ footer li:hover {
 /* Responsive Tablet */
 
 @media (max-width: 768px) and (min-width:376px) {
+
+    .all_but_not_footer{
+        margin-left: 0px;
+    }
+
+    header{
+        margin-left: 4%;
+    }
+
+    .logo_nav{
+        margin-left: 10px;
+    }
   
     .small_nav{
         display: flex;
@@ -806,6 +907,7 @@ footer li:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
+    width: 100%;
   }
 
   .filter_name {
@@ -814,16 +916,23 @@ footer li:hover {
 
   main {
     flex-direction: column-reverse;
+    padding: 0px;
   }
 
   .popular {
-    padding-right: 60%;
+    padding-right: 0;
     padding-bottom: 50px;
     margin-left: 0px;
+    width: 100%;
+    border-radius: 0px;
+    border: 0px;
   }
 
   .popular h2{
-      margin-bottom: 50px;
+      margin-bottom: 10%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 7%;
   }
 
   .rooms_name{
@@ -831,21 +940,39 @@ footer li:hover {
   }
 
   .popular_rooms_preview {
-    padding-right: 250px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .popular_rooms_preview img{
+      width: 40%;
+  }
+
+  .popular_description{
+      width:100%;
   }
 
   .popular aside{
-    row-gap: 50px;
+    row-gap: 30px;
+  }
+
+  .popular_star{
+      margin-top: 70px;
   }
 
   .Hébergements_Marseille {
-    padding-right: 30%;
+    width: 100%;
     height: 100%;
+    border-radius: 0px;
+    border: 0px;
   }
 
   .Hébergements_Marseille h2 {
-    margin-left: 48px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-bottom: 7%;
+    margin-right: 10%;
+    margin-top: 7%;
   }
 
   .Hébergements_Marseille aside {
@@ -853,15 +980,16 @@ footer li:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    row-gap: 50px;
-    width: 85%;
+    row-gap: 30px;
+    width: 80%;
   }
 
   .rooms_preview {
     display: flex;
     flex-direction: row;
-    width: 140%;
-    margin-left: 4%;
+    width: 100%;
+    margin-left:10%;
+
   }
 
   .rooms_preview img {
@@ -878,11 +1006,24 @@ footer li:hover {
     line-height: 22px;
   }
 
+  .star{
+      margin-top: 35px;
+  }
+
+  .Hébergements_Marseille p {
+      margin-left: 6%;
+  }
+
+  .activity{
+      width: 100%;
+      margin-left: 2%;
+  }
+
   .activity_list {
     display: grid;
-    grid-column-gap: 63px;
+    grid-column-gap: 13%;
     grid-row-gap: 40px;
-    width: 55%;
+    width: 97%;
     height: 100%;
     grid-template-areas:
       "vieux_port fort_pomegues"
@@ -890,51 +1031,55 @@ footer li:hover {
       "calanques Notre_dame_de_la_Garde"
       "calanques parc_longchamp";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 160px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 
   footer {
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: -30%;
     width: 100%;
   }
 }
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
+
+    body{
+        border: 1px red solid;
+    }
 
     .all_but_not_footer{
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     header{
-        margin-left: 10px;
+        margin-left: 3%;
     }
 
     .logo_nav img{
-        margin-top: 24px;
-       
+        margin-left: -55%;
+        margin-top: 20%;
     }
 
     .logo_nav{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        width: 100px;
+        width: 25%;
     }
 
     .nav_list{
-        margin-left: 145px;
+        margin-left: 90%;
     }
 
     .small_nav{
-        margin-top: -11px;
+        margin-top: -10%;
         display: flex;
         justify-content: space-between;
-        margin-left: 82px;
-        margin-top:-25px;
+        margin-left: 83%;
     }
 
     .small_nav a:hover {
@@ -963,8 +1108,8 @@ footer li:hover {
 
     .nav_inscription{
         position: absolute;
-        top: 8px;
-        left: 250px;
+        top: 1%;
+        left: 62%;
         color: #0065fc;
         font-weight: bold;
         border: white;
@@ -976,9 +1121,8 @@ footer li:hover {
     }
 
     .content h2 { 
-      font-size: 1.5em;
-      margin-top: 0px;
-      margin-bottom: 20px;
+      font-size: 158%;
+      margin-bottom: 6%;
     }
 
     .content p{
@@ -1002,8 +1146,15 @@ footer li:hover {
     display: inline-block;
     }
    
+    .filter{
+        width: 100%;
+        flex-direction: column;
+    }
+
     .filter span{
         font-weight: bold;
+        margin-right: 80%;
+        margin-bottom: 5%;
     }
 
     .filter_tablet_responsive {
@@ -1026,26 +1177,33 @@ footer li:hover {
         margin-left: 33px;
     }
 
+    main{
+        flex-direction: column-reverse;
+    }
+
     .popular{
-        width: 32%;
-        border-left-width: 15px;
-        border-right-width: 15px;
-        border-radius: 0px;
-        border-bottom-width: 0px;
+        width: 100%;
+        border-radius: 0%;
+        margin: 0px;
+        border: 0px;
+        padding-bottom: 10%;
     }
 
     .popular h2{
-        width: 322px;
-        margin-top: 9px;
-        margin-bottom:20px;
+        width: 77%;
+        margin-top: 7%;
+        margin-bottom:7%;
+        margin-left: 7%;
     }
 
     .popular aside{
-        row-gap: 15px;
+        row-gap: 25px;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     .popular_rooms_preview{
-        width: 14%;
+        width: 90%;
     }
 
     .popular_description .rooms_name{
@@ -1070,50 +1228,50 @@ footer li:hover {
     .Hébergements_Marseille{
         background-color: white;
         border: none;
+        width: 100%;
     }
 
     .Hébergements_Marseille h2{
-        width: 120%;
-        margin-top: 5px;
-        margin-left: 20px;
-        margin-bottom: 20px;
+        width: 100%;
+        margin-top: 7%;
+        margin-left: 12%;
+        margin-bottom: 7%;
     }
 
     .Hébergements_Marseille aside{
-        row-gap: 20px;
+        row-gap: 25px;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .rooms_preview{
         display: flex;
         flex-direction: column;
-        width: 168%;
-        height: 190px;
+        width: 90%;
+        height: 160px;
         margin-left: 0px;
     }
 
     .rooms_preview img{
         width: 98%;
-        height: 100px;
+        height: 80px;
         border-radius: 20px 20px 0px 0px;
     }
 
     .rooms_name{
-        width: 170px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        font-size: 0.9em;
+        width: 100%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+        font-size: 1em;
         font-weight: bold;
     }
 
     .rooms_price{
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 4%;
         font-size: 0.9em;
     }
 
     .star{
-        margin-bottom: 6px;
-        margin-top: 5px;
         font-size: 0.8em;
     }
 
@@ -1122,12 +1280,15 @@ footer li:hover {
     }
 
 
+    .activity{
+        margin-top: 180%;
+    }
 
     .activity_list {
       display: flex;
       flex-direction: column;
       margin-left: 10px;
-      row-gap: 20px;
+      row-gap: 25px;
     }
 
     .activity h2{
@@ -1137,73 +1298,73 @@ footer li:hover {
     }
 
     .vieux_port{
-        width: 48%;
+        width: 100%;
         height: 200px;
     }
 
     .vieux_port img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
     }
 
     .fort_pomegues{
-        width: 48%;
+        width: 100%;
         height: 200px;
     }
     
     .fort_pomegues img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
     }
 
     .ile_frioul{
-        width: 48%;
+        width: 100%;
         height: 200px;
     }
 
     .ile_frioul img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
     }
 
     .calanques{
-        width: 48%;
+        width: 100%;
         height: 200px;
     }
 
     .calanques img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
     }
 
     .Notre_dame_de_la_Garde{
-        width: 48%;
+        width: 100%;
         height: 200px;
     }
 
     .Notre_dame_de_la_Garde img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top: -1px;
     }
 
     .parc_longchamp{
-        width: 48%;
+        width: 100%;
         height: 200px;
         margin-top: 0px;
     }
 
     .parc_longchamp img{
-        width: 353px;
+        width: 100%;
         height: 139px;
         border-radius: 20px 20px 0px 0px;
         margin-top -1px;;
@@ -1215,20 +1376,8 @@ footer li:hover {
     }
 
     footer ul{
-        width: 122%;
+        width: 100%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
 
   }
 
