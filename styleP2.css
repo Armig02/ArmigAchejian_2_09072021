@@ -27,19 +27,16 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  margin-left: 25px;
 }
 
 .nav_list {
   display: flex;
-  margin: 0px;
-  justify-content: space-around;
   width: 100%;
   font-size: 1em;
   text-align: center;
   margin-top: 22px;
-  margin-left: 650px;
+  margin-left: 684px;
+  margin-right: 20px;
 }
 
 .small_nav{
@@ -611,6 +608,10 @@ footer li:hover {
 
 @media (min-width: 2560px) {
 
+    body{
+      border:1px turquoise solid;
+    }
+
     .logo_nav{
         margin-left: 0px;
     }
@@ -662,7 +663,12 @@ footer li:hover {
 
 /*Responsive Laptop 1440px */
 
-@media (max-width: 1440px) and (min-width:1025px) {
+@media (max-width: 1440px) and (min-width:1195px) {
+
+    body{
+      border:1px solid violet;
+      margin-left: 0%;
+    }
 
     .all_but_not_footer{
         margin-left: 10px;
@@ -674,21 +680,39 @@ footer li:hover {
 
     .nav_list{
         justify-content: normal;
-        margin-left: 60%;
+        margin-left: 57%;
     }
 
+    .Hébergements_Marseille{
+      width: 61%;
+      height: 100%;
+    }
 
+    .Hébergements_Marseille aside{
+      justify-content: space-around;
+    }
 
     .Hébergements_Marseille h2{
-        margin-left: 50px;
+        margin-left: 4%;
     }
     
     .Hébergements_Marseille p a{
-        margin-left: 50px;
+        margin-left: 4%;
     }
 
-    main{
-        padding-right: 34px;
+    .popular{
+      margin-left: 3%;
+      width: 28%;
+      height: 543px;
+    }
+
+    .popular h2{
+      margin-right: -5%;
+    }
+
+    .popular_rooms_preview{
+      width: 100%;
+      padding-right: 8%;
     }
 
     .activity{
@@ -712,10 +736,136 @@ footer li:hover {
     }
 
     footer{
-        margin-left: -19px;
-        padding-right: 11px;
+      width: 100%;
+  
+    }
+
+    .vieux_port{
+      width: 95%;
+    }
+
+    .vieux_port img{
+      width: 100%;
+    }
+
+    .fort_pomegues{
+      width: 95%;
+    }
+
+    .fort_pomegues img{
+      width: 100%;
+    }
+
+    .ile_frioul{
+      width: 95%;
+    }
+
+    .ile_frioul img{
+      width: 100%;
+    }
+
+    .calanques{
+      width: 95%;
+    }
+
+    .calanques img{
+      width: 100%;
+    }
+
+    .calanques p{
+      margin-top: 5px;
+    }
+
+    .Notre_dame_de_la_Garde{
+      width: 95%;
+    }
+
+    .Notre_dame_de_la_Garde img{
+      width: 100%;
+    }
+
+    .parc_longchamp{
+      width: 95%;
+    }
+
+    .parc_longchamp img{
+      width: 100%;
+    }
+
+    footer{
+      width: 100%;
+    }
+
+    footer ul{
+      width: 26%;
     }
 }
+
+
+/*nouveau*/
+
+@media (max-width:1194px) and (min-width:1025px){
+
+  body{
+    border: orange 1px solid;
+  }
+
+  .nav_list{
+    margin-left: 43%;
+  }
+
+  .Hébergements_Marseille{
+    width: 55%;
+    height: 100%;
+  }
+
+  .popular{
+    width: 31%;
+    height: 775px;
+  }
+
+  .activity img{
+    width: 100%;
+  }
+
+  .vieux_port{
+    width: 220px;
+  }
+
+  .fort_pomegues{
+    width: 220px;
+  }
+
+  .ile_frioul{
+    width: 220px;
+  }
+
+  .calanques{
+    width: 220px;
+  }
+
+  .Notre_dame_de_la_Garde{
+    width: 220px;
+  }
+
+  .parc_longchamp{
+    width: 220px;
+  }
+
+  footer{
+    width: 100%;
+  }
+
+  footer ul{
+    width: 26%;
+  }
+
+ 
+
+
+  
+}
+
 
   /*Responsive laptop 1024px*/
 
@@ -723,6 +873,10 @@ footer li:hover {
 
     .all_but_not_footer{
         margin-left: 10px;
+    }
+    
+    body{
+      border: magenta solid 1px
     }
 
     .logo_nav{
@@ -735,7 +889,7 @@ footer li:hover {
   
     .nav_list{
       align-items: center;
-      margin-left: 660px;
+      margin-left: 475px;
     }
   
     .small_nav{
@@ -856,6 +1010,10 @@ footer li:hover {
 /* Responsive Tablet */
 
 @media (max-width: 768px) and (min-width:376px) {
+
+    body{
+      border: 1px solid green;
+    }
 
     .all_but_not_footer{
         margin-left: 0px;
@@ -1038,15 +1196,16 @@ footer li:hover {
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
+    padding: left 0;
   }
 }
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 376px) {
+@media (max-width: 375px) {
 
     body{
-        border: 1px red solid;
+        border: 1px yellow solid;
     }
 
     .all_but_not_footer{
