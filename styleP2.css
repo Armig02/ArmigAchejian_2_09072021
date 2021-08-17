@@ -1202,7 +1202,7 @@ footer li:hover {
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
 
     body{
         border: 1px yellow solid;
@@ -1217,7 +1217,7 @@ footer li:hover {
     }
 
     .logo_nav img{
-        margin-left: -55%;
+        margin-left: 8%;
         margin-top: 20%;
     }
 
@@ -1230,21 +1230,18 @@ footer li:hover {
         width: 25%;
     }
 
-    .nav_list{
-        margin-left: 90%;
-    }
 
     .small_nav{
         margin-top: -10%;
         display: flex;
         justify-content: space-between;
-        margin-left: 83%;
     }
 
     .small_nav a:hover {
         border: 1px solid white;
         border-bottom-color: #0065fc;
         padding-bottom: 1px;
+        padding-right: 45px;
     }
 
     .nav_room a{
