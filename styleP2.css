@@ -1013,7 +1013,7 @@ footer li:hover {
 
 /* Responsive Tablet */
 
-@media (max-width: 768px) and (min-width: 375px) {
+@media (max-width: 768px) and (min-width: 376px) {
 
     body{
       border: 1px solid green;
@@ -1212,7 +1212,7 @@ footer li:hover {
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 374px) {
+@media (max-width: 375px) {
 
     body{
         border: 1px red solid;
@@ -1368,13 +1368,14 @@ footer li:hover {
 
     .popular aside{
         row-gap: 25px;
-        margin-left: 6%;
+        margin-left: 0%;
         margin-right: 0%;
         width: 100%;
     }
 
     .popular_rooms_preview{
         width: 90%;
+        margin-left: 16px;
     }
 
     .popular_description .rooms_name{
@@ -1412,7 +1413,7 @@ footer li:hover {
 
     .Hébergements_Marseille aside{
         row-gap: 25px;
-        width: 100%;
+        width: 98%;
         margin-left: 1%;
     }
 
