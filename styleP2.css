@@ -577,7 +577,7 @@ footer {
   padding-bottom: 15px;
   width: 1410px;;
   flex-wrap: wrap;
-  padding-right: 21px;
+  padding-right: 0px;
   margin-left: 0px;
 }
 
@@ -663,7 +663,7 @@ footer li:hover {
 
 /*Responsive Laptop 1440px */
 
-@media (max-width: 1440px) and (min-width:1195px) {
+@media (max-width: 1440px) and (min-width: 1195px) {
 
     body{
       border:1px solid violet;
@@ -735,11 +735,6 @@ footer li:hover {
       grid-template-rows: 1fr 1fr 1fr 160px 1fr;
     }
 
-    footer{
-      width: 100%;
-  
-    }
-
     .vieux_port{
       width: 95%;
     }
@@ -794,6 +789,7 @@ footer li:hover {
 
     footer{
       width: 100%;
+      padding-right: 0%;
     }
 
     footer ul{
@@ -804,7 +800,7 @@ footer li:hover {
 
 /*nouveau*/
 
-@media (max-width:1194px) and (min-width:1025px){
+@media (max-width: 1194px) and (min-width: 1025px){
 
   body{
     border: orange 1px solid;
@@ -869,7 +865,7 @@ footer li:hover {
 
   /*Responsive laptop 1024px*/
 
-@media (max-width: 1024px) and (min-width:769px){
+@media (max-width: 1024px) and (min-width: 769px){
 
     .all_but_not_footer{
         margin-left: 10px;
@@ -1009,7 +1005,7 @@ footer li:hover {
 
 /* Responsive Tablet */
 
-@media (max-width: 768px) and (min-width:376px) {
+@media (max-width: 768px) and (min-width: 375px) {
 
     body{
       border: 1px solid green;
@@ -1021,10 +1017,6 @@ footer li:hover {
 
     header{
         margin-left: 4%;
-    }
-
-    .logo_nav{
-        margin-left: 10px;
     }
   
     .small_nav{
@@ -1043,7 +1035,7 @@ footer li:hover {
   }
 
   .nav_list{
-      margin-left: 290px;
+      margin-left: 33%;
   }
 
 
@@ -1079,7 +1071,7 @@ footer li:hover {
 
   .popular {
     padding-right: 0;
-    padding-bottom: 50px;
+    padding-bottom: 85px;
     margin-left: 0px;
     width: 100%;
     border-radius: 0px;
@@ -1091,10 +1083,21 @@ footer li:hover {
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 7%;
+      font-size: 1.5em;
   }
 
-  .rooms_name{
-      width: 300px;
+  .popular aside{
+    margin-left: 0%;
+  }
+
+  .popular .rooms_name{
+      width: 93%;
+      font-size: 1.5em;
+  }
+
+  .popular .rooms_price{
+    font-size: 1.5em;
+    margin-left: 4%;
   }
 
   .popular_rooms_preview {
@@ -1116,7 +1119,7 @@ footer li:hover {
   }
 
   .popular_star{
-      margin-top: 70px;
+      margin-top: 12%;
   }
 
   .Hébergements_Marseille {
@@ -1173,13 +1176,13 @@ footer li:hover {
   }
 
   .activity{
-      width: 100%;
+      width: 97%;
       margin-left: 2%;
   }
 
   .activity_list {
     display: grid;
-    grid-column-gap: 13%;
+    grid-column-gap: 20%;
     grid-row-gap: 40px;
     width: 97%;
     height: 100%;
@@ -1194,18 +1197,17 @@ footer li:hover {
 
   footer {
     flex-direction: column;
-    justify-content: space-evenly;
     width: 100%;
-    padding: left 0;
+    padding-right: 0px;
   }
 }
 
 /* Responsive Mobile Iphone8  ou 320pxmax*/
 
-@media (max-width: 376px) {
+@media (max-width: 374px) {
 
     body{
-        border: 1px yellow solid;
+        border: 1px red solid;
     }
 
     .all_but_not_footer{
@@ -1283,6 +1285,7 @@ footer li:hover {
 
     .content p{
         font-size: 1.1em;
+        color: red;
     }
 
     #search_button{
@@ -1346,7 +1349,7 @@ footer li:hover {
     }
 
     .popular h2{
-        width: 77%;
+        width: 83%;
         margin-top: 7%;
         margin-bottom:7%;
         margin-left: 7%;
@@ -1354,7 +1357,7 @@ footer li:hover {
 
     .popular aside{
         row-gap: 25px;
-        margin-left: 5%;
+        margin-left: -5%;
         margin-right: 5%;
     }
 
@@ -1368,11 +1371,13 @@ footer li:hover {
         margin-top: 15px;
         margin-bottom: 10px;
         font-weight: bold;
+      
     }
        
     .popular_description .rooms_price{
         width: 175px;
         font-size: 0.8em;
+        margin-left: 8%;
     }
 
     .popular_star{
@@ -1388,16 +1393,16 @@ footer li:hover {
     }
 
     .Hébergements_Marseille h2{
-        width: 100%;
+        width: 83%;
         margin-top: 7%;
-        margin-left: 12%;
+        margin-left: 10%;
         margin-bottom: 7%;
     }
 
     .Hébergements_Marseille aside{
         row-gap: 25px;
         width: 90%;
-        margin-left: 5%;
+        margin-left: 9%;
     }
 
     .rooms_preview{
@@ -1431,13 +1436,17 @@ footer li:hover {
         font-size: 0.8em;
     }
 
+    .Hébergements_Marseille p{
+      margin-top: 15%;
+    }
+
     .Hébergements_Marseille p a{
-        margin-left: 20px;
+        margin-left: 1%;
     }
 
 
     .activity{
-        margin-top: 180%;
+        margin-top: 10%;
     }
 
     .activity_list {
