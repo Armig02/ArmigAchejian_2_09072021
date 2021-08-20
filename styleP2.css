@@ -680,7 +680,7 @@ footer li:hover {
 
     .nav_list{
         justify-content: normal;
-        margin-left: 57%;
+        margin-left: 60%;
     }
 
     .Hébergements_Marseille{
@@ -701,7 +701,7 @@ footer li:hover {
     }
 
     .popular{
-      margin-left: 3%;
+      margin-left: 4%;
       width: 28%;
       height: 543px;
     }
@@ -838,6 +838,10 @@ footer li:hover {
 
   .calanques{
     width: 220px;
+  }
+
+  .calanques p{
+    margin-top: 5px;
   }
 
   .Notre_dame_de_la_Garde{
@@ -1091,7 +1095,7 @@ footer li:hover {
       margin-left: 10%;
       margin-right: 10%;
       margin-top: 7%;
-      font-size: 1.5em;
+      font-size: 2em;
   }
 
   .popular aside{
@@ -1142,6 +1146,7 @@ footer li:hover {
     margin-bottom: 7%;
     margin-right: 10%;
     margin-top: 7%;
+    font-size: 2em;
   }
 
   .Hébergements_Marseille aside {
@@ -1167,8 +1172,8 @@ footer li:hover {
     padding-top: 3px;
     padding-bottom: 3px;
     object-fit: cover;
-    width: 127px;
-    height: 138px;
+    width: 30%;
+    height: 161px;
   }
 
   .room_description {
@@ -1181,11 +1186,17 @@ footer li:hover {
 
   .Hébergements_Marseille p {
       margin-left: 6%;
+      width: 100%;
+      font-size: 1.5em;
   }
 
   .activity{
       width: 97%;
       margin-left: 2%;
+  }
+
+  .activity h2{
+    font-size: 2em;
   }
 
   .activity_list {
@@ -1370,7 +1381,7 @@ footer li:hover {
         row-gap: 25px;
         margin-left: 0%;
         margin-right: 0%;
-        width: 100%;
+        width: 96%;
     }
 
     .popular_rooms_preview{
@@ -1413,7 +1424,7 @@ footer li:hover {
 
     .Hébergements_Marseille aside{
         row-gap: 25px;
-        width: 98%;
+        width: 95%;
         margin-left: 1%;
     }
 
@@ -1476,6 +1487,7 @@ footer li:hover {
       flex-direction: column;
       margin-left: 10px;
       row-gap: 25px;
+      width: 90%;
     }
 
     .activity h2{
