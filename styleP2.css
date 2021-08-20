@@ -608,10 +608,7 @@ footer li:hover {
 
 @media (min-width: 2560px) {
 
-    body{
-      border:1px turquoise solid;
-    }
-
+  
     .logo_nav{
         margin-left: 0px;
     }
@@ -666,7 +663,6 @@ footer li:hover {
 @media (max-width: 1440px) and (min-width: 1195px) {
 
     body{
-      border:1px solid violet;
       max-width: none;
     }
 
@@ -802,9 +798,6 @@ footer li:hover {
 
 @media (max-width: 1194px) and (min-width: 1025px){
 
-  body{
-    border: orange 1px solid;
-  }
 
   .nav_list{
     margin-left: 43%;
@@ -875,9 +868,6 @@ footer li:hover {
         margin-left: 10px;
     }
     
-    body{
-      border: magenta solid 1px
-    }
 
     .logo_nav{
         display: flex;
@@ -1019,9 +1009,7 @@ footer li:hover {
 
 @media (max-width: 768px) and (min-width: 376px) {
 
-    body{
-      border: 1px solid green;
-    }
+  
 
     .all_but_not_footer{
         margin-left: 0px;
@@ -1158,6 +1146,14 @@ footer li:hover {
     width: 80%;
   }
 
+  .Hébergements_Marseille .rooms_name{
+    width: 100%;
+  }
+
+  .Hébergements_Marseille .rooms_price{
+    width: 100%;
+  }
+
   .rooms_preview {
     display: flex;
     flex-direction: row;
@@ -1173,7 +1169,7 @@ footer li:hover {
     padding-bottom: 3px;
     object-fit: cover;
     width: 30%;
-    height: 161px;
+    height: 195px;
   }
 
   .room_description {
@@ -1181,13 +1177,17 @@ footer li:hover {
   }
 
   .star{
-      margin-top: 35px;
+      margin-top: 74px;
   }
 
   .Hébergements_Marseille p {
       margin-left: 6%;
-      width: 100%;
+      width: 94%;
       font-size: 1.5em;
+  }
+
+  .Hébergements_Marseille p a {
+    width: 94%;
   }
 
   .activity{
@@ -1225,9 +1225,7 @@ footer li:hover {
 
 @media (max-width: 375px) {
 
-    body{
-        border: 1px red solid;
-    }
+
 
     .all_but_not_footer{
         margin-left: 0px;
