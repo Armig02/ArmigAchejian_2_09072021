@@ -676,7 +676,7 @@ footer li:hover {
 
     .nav_list{
         justify-content: normal;
-        margin-left: 60%;
+        margin-left: 57%;
     }
 
     .Hébergements_Marseille{
@@ -697,8 +697,8 @@ footer li:hover {
     }
 
     .popular{
-      margin-left: 4%;
-      width: 28%;
+      margin-left: 2%;
+      width: 30%;
       height: 543px;
     }
 
@@ -712,7 +712,7 @@ footer li:hover {
     }
 
     .activity{
-        width: 100%;
+        width: 99%;
     }
 
     .activity_list {
