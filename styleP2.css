@@ -247,7 +247,6 @@ main {
 }
 
 .Hébergements_Marseille h2:hover {
-  font-size: 1.3em;
   cursor: pointer;
 }
 
@@ -351,7 +350,6 @@ main {
 }
 
 .popular h2:hover {
-  font-size: 1.3em;
   cursor: pointer;
 }
 
@@ -402,7 +400,6 @@ main {
 }
 
 .activity h2:hover {
-  font-size: 1.3em;
   cursor: pointer;
 }
 
