@@ -100,7 +100,7 @@ form {
   justify-content: center;
   align-items: center;
   border-radius: 15px 0px 0px 15px;
-  border: 1px #f2f2f2;
+  border: 1px transparent;
   padding: 15px 20px 15px 20px;
   text-align: center;
 }
@@ -119,7 +119,7 @@ form {
 #search_button {
   color: white;
   background-color: #0065fc;
-  border: 1px #0065fc solid;
+  border: 1px transparent solid;
   border-radius: 0px 15px 15px 0px;
   font-size: 1em;
   padding: 15px 20px 15px 20px;
@@ -262,7 +262,7 @@ main {
 }
 
 .rooms_preview {
-  border: 2px white solid;
+  border: 2px transparent solid;
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -328,7 +328,7 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 3px #f2f2f2 solid;
+  border: 3px transparent solid;
   border-radius: 20px;
   margin-left: 33px;
   background-color: #f2f2f2;
@@ -361,7 +361,7 @@ main {
 }
 
 .popular_rooms_preview {
-  border: 2px white solid;
+  border: 2px transparent solid;
   border-radius: 20px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -1311,7 +1311,7 @@ footer li:hover {
     #search_zoom{
     color: white;
     background-color: #0065fc;
-    border: 1px #0065fc;
+    border: 1px transparent;
     border-radius: 15px 15px 15px 15px;
     font-size: 1em;
     padding: 15px 20px 15px 20px;
@@ -1348,8 +1348,8 @@ footer li:hover {
         width: 90%;
     }
 
-    .information span1{
-        margin-left: 33px;
+    .info_suite{
+      margin-left: 9%;
     }
 
     main{
@@ -1480,7 +1480,7 @@ footer li:hover {
     .activity_list {
       display: flex;
       flex-direction: column;
-      margin-left: 10px;
+      margin-left: 20px;
       row-gap: 25px;
       width: 90%;
     }
