@@ -53,7 +53,7 @@ body {
   padding: 35px;
 }
 
-.nav_list a:hover {
+.small_nav a:hover {
   border: 1px solid white;
   border-top-color: #0065fc;
   padding-top: 30px;
@@ -791,7 +791,7 @@ footer li:hover {
 }
 
 
-/*nouveau*/
+/*Responsive Laptop 1025*/
 
 @media (max-width: 1194px) and (min-width: 1025px){
 
@@ -1242,52 +1242,62 @@ footer li:hover {
     }
 
     .nav_list{
-      margin-left: 40%;
-    }
+      margin-left: 0;
 
+    }
 
     .small_nav{
-        margin-top: -10%;
+        margin-top: 0px;
         display: flex;
         justify-content: space-between;
+        height: 28px;
+        margin-bottom: 25%;
+        padding-bottom: 7%;
     }
 
-    .small_nav a:hover {
-        border: 1px solid white;
-        border-bottom-color: #0065fc;
-        padding-bottom: 1px;
-        padding-right: 45px;
+    .small_nav a:hover{
+        color:#0065fc;
+        padding-top:2%;
+        border-top: none;
+        border-bottom: 3px solid #0065fc;
     }
 
-    .nav_room a{
-        width: 160px;
+
+    .small_nav .nav_room{
+        width: 50%;
+        padding-top: 1%;
+        padding-left: 36px;
+        padding-right: 47px;
+        padding-bottom: 0%;
+        border: 3px solid transparent;
+        height: 100%;
+        border-bottom-color:#f2f2f2;
     }
 
-    .nav_activity a{
-        width: 160px;
-    }
 
-    .nav_room:hover{
-        padding-left: 60px;
-        padding-right: 30px;
-    }
-
-    .nav_activity:hover{
-        padding-left: 60px;
-        padding-right: 100px;
+    .small_nav .nav_activity {
+        width: 50%;
+        padding-top: 1%;
+        padding-left: 48px;
+        padding-right: 52px;
+        padding-bottom: 0%;
+        border: 3px solid transparent;
+        height: 100%;
+        border-bottom-color: #f2f2f2;
     }
 
     .nav_inscription{
         position: absolute;
-        top: 1%;
+        top: 0%;
         left: 62%;
         color: #0065fc;
         font-weight: bold;
         border: white;
+        padding-bottom: 0%
+        ;
     }
 
     .nav_inscription:hover{
-        display: none;
         cursor: pointer;
     }
 
@@ -1297,7 +1307,15 @@ footer li:hover {
     }
 
     .content p{
-        font-size: 1.1em;
+        font-size: 1em;
+    }
+
+    form{
+      margin-left: 4%;
+    }
+
+    #place{
+      width: 100%;
     }
 
     #search_button{
@@ -1315,6 +1333,7 @@ footer li:hover {
     font-weight: bold;
     cursor: pointer;
     display: inline-block;
+    margin-right: 7%;
     }
    
     .filter{
@@ -1437,6 +1456,7 @@ footer li:hover {
         margin-left: 1%;
     }
 
+
     .Hébergements_Marseille .rooms_name{
       margin-top: 4%;
       width: 90%;
@@ -1456,7 +1476,7 @@ footer li:hover {
 
     .rooms_preview img{
         width: 98%;
-        height: 80px;
+        height: 65%;
         border-radius: 20px 20px 0px 0px;
     }
 
@@ -1589,6 +1609,24 @@ footer li:hover {
     }
 
   }
+
+/*@media (max-width: 667px){
+  
+  body{
+    border: 2px red solid;
+  }
+
+  .nav_list{
+    margin-left: 26%;
+  }
+
+  .activity_list{
+    display: grid;
+    grid-column-gap:9%;
+
+
+}*/
+
 
 
 
