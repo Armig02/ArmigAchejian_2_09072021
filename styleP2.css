@@ -1470,13 +1470,13 @@ footer li:hover {
         display: flex;
         flex-direction: column;
         width: 90%;
-        height: 160px;
+        height: 195px;
         margin-left: 0px;
     }
 
     .rooms_preview img{
         width: 98%;
-        height: 65%;
+        height: 60%;
         border-radius: 20px 20px 0px 0px;
     }
 
@@ -1508,7 +1508,7 @@ footer li:hover {
 
 
     .activity{
-        margin-top: 180%;
+        margin-top: 235%;
     }
 
     .activity_list {
@@ -1610,11 +1610,8 @@ footer li:hover {
 
   }
 
-/*@media (max-width: 667px){
-  
-  body{
-    border: 2px red solid;
-  }
+@media (min-width: 376px) and (max-width: 667px){
+
 
   .nav_list{
     margin-left: 26%;
@@ -1624,8 +1621,7 @@ footer li:hover {
     display: grid;
     grid-column-gap:9%;
 
-
-}*/
+}
 
 
 
